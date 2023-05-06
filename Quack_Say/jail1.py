@@ -12,7 +12,6 @@ def quack_say(to_print):
     -----~~'----
     """)
 
-
 while(True):
     inp = input("Enter expression : ")
     quack_say(inp + " = " + str(eval(inp)))
