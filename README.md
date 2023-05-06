@@ -13,7 +13,7 @@ Fair winds and following seas, sailors!
 **Flag Format:** ```CSeC{...}```
 
 ## Score Distribution
-1. [Black Flag](Black_Flag) - 50 points
-2. [Custom Crypto](Custom_Crypto) - 100 points
-2. [Quack Say](Quack_Say) - 150 points
-4. [Something Whaley](Something_Whaley) - 300 points
+- [x] 1. [Black Flag](Black_Flag) - 50 points
+- [x] 2. [Custom Crypto](Custom_Crypto) - 100 points
+- [x] 3. [Quack Say](Quack_Say) - 150 points
+- [x] 4. [Something Whaley](Something_Whaley) - 300 points
