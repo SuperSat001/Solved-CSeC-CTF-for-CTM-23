@@ -1,5 +1,5 @@
-#Black Flag#
-##CSeC{if_you_had_fought_like_a_man_you_need_not_have_been_hang'd_like_a_dog}##
+# Black Flag
+## CSeC{if_you_had_fought_like_a_man_you_need_not_have_been_hang'd_like_a_dog}
 
 On seeing a `.pcap` file, my immediate reaction was to pull up Wireshark.
 

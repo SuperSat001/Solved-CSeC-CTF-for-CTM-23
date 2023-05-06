@@ -1,6 +1,6 @@
-#Custom Crypto#
-##CSeC{g18_m1r_37w4s_g31s7y420}##
-####claw = 7233####
+# Custom Crypto
+## CSeC{g18_m1r_37w4s_g31s7y420}
+#### claw = 7233
 
 The code was slightly modified after I'd solved it, hence my solution is slightly unoptimized wrt the current code.
 

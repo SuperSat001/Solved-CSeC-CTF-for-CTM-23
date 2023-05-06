@@ -1,7 +1,7 @@
-#Something Whaley#
-##CSeC{4nd_n0w_y0u_d0n7}##
-##CSeC{qu1t3_4n_3y3_y0u_g07_7h3r3}##
-##CSeC{n0w_y0u_s33_m3}##
+# Something Whaley
+## CSeC{4nd_n0w_y0u_d0n7}
+## CSeC{qu1t3_4n_3y3_y0u_g07_7h3r3}
+## CSeC{n0w_y0u_s33_m3}
 
 I somehow found this challenge to be the easiest of all 4 (probably luck).
 
