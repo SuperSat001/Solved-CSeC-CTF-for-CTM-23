@@ -1,6 +1,6 @@
 # The Adventure of Fuglanna
 
-## `IITB{\x41rDuiN0_1$_f0r_Dumm13zZ}`
+### `IITB{\x41rDuiN0_1$_f0r_Dumm13zZ}`
 
 #### key = `{3,6,2,1,0,5,4,7}`
 #### iv (First) = 69
@@ -295,7 +295,7 @@ satyankar@Satyankars-MacBook-Air The_Adventure_of_Fuglanna % cat firstflag.txt |
 
 surprisingly gives the correct flag. **WOW!**
 
-This was a pretty weak first encryption. 
+This was a pretty weak initial encryption. 
 
 
 
